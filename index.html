@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fc;
+            color: #222;
+        }
+
+        header {
+            background: #14213d;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #64dfdf;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #64dfdf;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #0077b6;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: #0077b6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #14213d;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #dff6ff;
+            color: #14213d;
+            padding: 12px 18px;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <p>Hello, welcome to my portfolio!</p>
+        <h1>I'm <span>Kausika M S</span></h1>
+        <h3>Computer Science Engineering Student</h3>
+        <p>
+            I am passionate about coding, learning new technologies,
+            solving problems, and developing useful projects.
+        </p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I am a Computer Science Engineering student at
+                KPR Institute. I enjoy learning programming and
+                working with others. My goal is to become a skilled
+                software engineer.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <span>C Programming</span>
+            <span>Python</span>
+            <span>HTML</span>
+            <span>Teamwork</span>
+            <span>Problem Solving</span>
+            <span>Communication</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects & Achievements</h2>
+
+        <div class="card">
+            <h3>Solar-Powered Smart Mini Cold Storage</h3>
+            <p>
+                A Smart India Hackathon project idea focused on
+                preserving fresh vegetables using solar-powered cooling.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Real-Time Bus Tracking System</h3>
+            <p>
+                A proposed system to help passengers track buses
+                and know their current locations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Achievements</h3>
+            <p>
+                Participated in Smart India Hackathon and a college
+                project expo. Received first prize in a school-level
+                science project.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p>Email: your-email@example.com</p>
+            <p>
+                LinkedIn:
+                <a href="https://linkedin.com/in/kausika-senthil-b28a62432"
+                   target="_blank">
+                    Visit My LinkedIn
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Kausika M S | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
